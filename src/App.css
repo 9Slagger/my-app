@@ -5,10 +5,15 @@
 
 .Header {
   box-shadow: 0 0 5px 2px;
+  min-height: 40px;
 }
 
 .Footer {
   background-color: gainsboro;
   box-shadow: 0 0 5px 0px;
-  min-height: 45px
+  min-height: 40px
+}
+
+.Content {
+  padding-top: 55px;
 }

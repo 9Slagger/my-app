@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchProducts } from '../../actions';
+import MainLayout from '../../common/MainLayout'
 
 class ProductPage extends Component {
   componentWillMount() {
@@ -13,9 +14,9 @@ class ProductPage extends Component {
   
 	render() {
 		return (
-			<div>
+			<MainLayout>
 				<h1>Product Page</h1>
-			</div>
+			</MainLayout>
 		);
 	}
 }
