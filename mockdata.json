@@ -1,4 +1,14 @@
 {
+  "mockproducts": [
+    {
+      "id": 1,
+      "name": "George React"
+    },
+    {
+      "id": "2",
+      "name": "sdsfsd"
+    }
+  ],
   "account": [
     {
       "id": 1,
@@ -9,6 +19,58 @@
     {
       "id": 1,
       "price": 1000
+    },
+    {
+      "id": 2,
+      "price": 1000
+    },
+    {
+      "id": 3,
+      "price": 1000
+    },
+    {
+      "id": 4,
+      "price": 1000
+    },
+    {
+      "id": 5,
+      "price": 1000
+    },
+    {
+      "id": 6,
+      "price": 500
+    },
+    {
+      "id": 7,
+      "price": 500
+    },
+    {
+      "id": 8,
+      "price": 500
+    },
+    {
+      "id": 9,
+      "price": 500
+    },
+    {
+      "id": 10,
+      "price": 100
+    },
+    {
+      "id": 11,
+      "price": 100
+    },
+    {
+      "id": 12,
+      "price": 100
+    },
+    {
+      "id": 13,
+      "price": 100
+    },
+    {
+      "id": 14,
+      "price": 100
     }
   ]
 }
