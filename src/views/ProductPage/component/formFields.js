@@ -1,5 +1,4 @@
 export const ProductFormFields = [
-    { label: 'Product Name', name: 'productName', type: 'text', required: true },
-    { label: 'Unit Price', name: 'unitPrice', type: 'number', required: true },
-    { label: 'Thumbnail', name: 'thumbnail', type: 'text', required: true },
+    { label: 'Product Name', name: 'id', type: 'number', required: true },
+    { label: 'Unit Price', name: 'name', type: 'text', required: true },
 ];

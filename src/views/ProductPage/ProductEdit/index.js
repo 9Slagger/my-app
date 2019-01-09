@@ -1,17 +1,49 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { createProduct, updateProduct, fetchProduct } from '../../../actions';
 import MainLayout from '../../../common/MainLayout';
 import ProductForm from '../component/ProductForm';
 
 class ProductEdit extends Component {
+	componentDidMount() {
+		if (this.props.match.params.id) {
+			this.props.fetchProduct(this.props.match.params.id);
+		}
+	}
+	
 	render() {
+		const { formValues, product, createProduct, updateProduct, match } = this.props;
 		return (
 			<MainLayout>
 				<div className="container">
-					<ProductForm />
+					{match.path.indexOf('add') ? (
+						<div>
+							<h2>Add Product</h2>
+							<ProductForm onProductSubmit={() => createProduct(formValues)} />
+						</div>
+					) : (
+						<div>
+							<h2>Edit Product</h2>
+							<ProductForm onProductSubmit={() => updateProduct(product.id, formValues)} />
+						</div>
+					)}
 				</div>
 			</MainLayout>
 		);
 	}
 }
 
-export default ProductEdit;
+const mapStateToProps = ({ form, product }) => {
+	return { formValues: form.productform ? form.productform : null, product };
+};
+
+const mapDispatchToProps = {
+	createProduct,
+	updateProduct,
+	fetchProduct,
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(ProductEdit);

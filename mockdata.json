@@ -1,0 +1,6 @@
+{
+    "mockproducts": [
+      { "id": 1, "name": "George React" },
+      { "id": 2, "name": "Tom React" }
+    ]
+}
