@@ -12,7 +12,7 @@ class ProductForm extends Component {
 	}
 
 	render() {
-		const { onProductSubmit, handleSubmit, product } = this.props;
+		const { onProductSubmit, handleSubmit } = this.props;
 		return (
 			<div>
 				<form onSubmit={handleSubmit(onProductSubmit)}>

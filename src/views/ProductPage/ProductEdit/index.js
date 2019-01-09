@@ -12,19 +12,19 @@ class ProductEdit extends Component {
 	}
 	
 	render() {
-		const { formValues, product, createProduct, updateProduct, match } = this.props;
+		const { formValues, createProduct, updateProduct, match } = this.props;
 		return (
 			<MainLayout>
 				<div className="container">
-					{match.path.indexOf('add') ? (
+					{match.path.indexOf('add') > 0 ? (
 						<div>
 							<h2>Add Product</h2>
-							<ProductForm onProductSubmit={() => createProduct(formValues)} />
+							<ProductForm onProductSubmit={() => createProduct(formValues && formValues.values)} />
 						</div>
 					) : (
 						<div>
 							<h2>Edit Product</h2>
-							<ProductForm onProductSubmit={() => updateProduct(product.id, formValues)} />
+							<ProductForm onProductSubmit={() => updateProduct(match.params.id, formValues && formValues.values)} />
 						</div>
 					)}
 				</div>
