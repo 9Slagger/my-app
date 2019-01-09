@@ -20,7 +20,8 @@
     "sweetalert2": "^7.33.1"
   },
   "scripts": {
-    "start": "react-scripts start json-server --watch mockdata.json",
+    "start": "react-scripts start && json-server --watch mockdata.json",
+    "startmock": "json-server --watch mockdata.json",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

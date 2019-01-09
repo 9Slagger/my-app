@@ -1,11 +1,13 @@
 import { combineReducers } from 'redux'
 import {reducer as reduxForm } from 'redux-form'
 import { connectRouter } from 'connected-react-router'
-import productReducer from './productReducer'
+import BankReducer from './BankReducer'
+import AccountReducer from './AccountReducer'
 
 export default history =>
   combineReducers({
     form: reduxForm,
-    product: productReducer,
+    accounts: AccountReducer,
+    banks: BankReducer,
     router: connectRouter(history)
   })

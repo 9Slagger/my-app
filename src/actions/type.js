@@ -1,15 +1,16 @@
-export const PRODUCT_FETCHING = 'product_fetching'
-export const PRODUCT_FETCHING_SUCCESS = 'product_fetching_success'
-export const PRODUCT_FETCHING_FAIL = 'product_fetching_fail'
 
-export const PRODUCT_CREATE = 'product_create'
-export const PRODUCT_CREATE_SUCCESS = 'product_create_success'
-export const PRODUCT_CREATE_FAIL = 'product_create_fail'
+export const BANKNOTE_FETCH = "banknote_fetch"
+export const BANKNOTE_FETCH_SUCCESS = "banknote_fetch_success"
+export const BANKNOTE_FETCH_FAIL = "banknote_fetch_fail"
 
-export const PRODUCT_UPDATE = 'product_update'
-export const PRODUCT_UPDATE_SUCCESS = 'product_update_success'
-export const PRODUCT_UPDATE_FAIL = 'product_update_fail'
+export const BANKNOTE_DELETE = "banknote_delete"
+export const BANKNOTE_DELETE_SUCCESS = "banknote_delete_success"
+export const BANKNOTE_DELETE_FAIL = "banknote_delete_fail"
 
-export const PRODUCT_DELETE = 'product_delete'
-export const PRODUCT_DELETE_SUCCESS = 'product_delete_delete'
-export const PRODUCT_DELETE_FAIL = 'product_delete_delete'
+export const ACCOUNT_FETCH = "account_fetch"
+export const ACCOUNT_FETCH_SUCCESS = "account_fetch_SUCCESS"
+export const ACCOUNT_FETCH_FAIL = "account_fetch__FAIL"
+
+export const ACCOUNT_EDIT = "account_EDIT"
+export const ACCOUNT_EDIT_SUCCESS = "account_EDIT_SUCCESS"
+export const ACCOUNT_EDIT_FAIL = "account_EDIT__FAIL"

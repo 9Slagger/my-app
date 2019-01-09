@@ -1,12 +1,14 @@
 {
-  "mockproducts": [
+  "account": [
     {
       "id": 1,
-      "name": "George React"
-    },
+      "money": 7500
+    }
+  ],
+  "banknote": [
     {
-      "id": "2",
-      "name": "sdsfsd"
+      "id": 1,
+      "price": 1000
     }
   ]
 }
