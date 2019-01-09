@@ -2,9 +2,12 @@
 
 วิธี run project
 
-1.yarn หรือ npm install
+1.yarn
 
-2.yarn start หรือ npm start
+2.yarn startmock
+
+3.yarn start
+
 
 เนื่องจาก json-server เป็นตัวช่วยที่สะดวกและง่ายในการจำลอง api ที่เครื่อง dev จึงใช้ json-server เป็นตัว ###mockdata อย่างง่าย
 
